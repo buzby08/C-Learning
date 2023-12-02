@@ -63,15 +63,41 @@ int main() {
   int y = 5;
   
   if (x > 5 && y < 10) {
-    std::cout << "Both conditions are true";
+    std::cout << "Both conditions are true\n";
   } else if (x < 5 || y > 10) {
-    std::cout << "One of the conditions is true";
+    std::cout << "One of the conditions is true\n";
   } else if (!(x == 5)) {
-    std::cout << "The negation of x being equal to 5 is true";
+    std::cout << "The negation of x being equal to 5 is true\n";
   } else {
-    std::cout << "None of the conditions are true";
+    std::cout << "None of the conditions are true\n";
 
 }
 
+  // Loops are used to repeat code.
+  // There are 2 types of loops: 'While' and 'For'
+  // while loops loop as long as a condition is true.
+  // for loops loop for a set number of times.
 
+  // while loops look similar to if statements
+  // while (CONDITION) {
+
+  int guess = 0;
+  while (guess != 10) {
+    std::cout << "Guess the number: ";
+    std::cin >> guess;
+    
+}
+
+  // a for loop will generally look like this
+  // for (int i = 0; i < 10; i++) {; 
+  // int i = 0 is the declaration of the counter
+  // i < 10 is the condition for the loop to continue
+  // i++ is the increment in which the counter will change by.
+  //   ++ means add 1, -- means take 1, but you can use += 2 etc.
+
+  for (int i=0; i < 10; i += 2) {
+    std::cout << i << "\n";
+  }
+
+  
 }
